@@ -6,8 +6,34 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
-<body>
 
+<body>
+<header> 
+    <h1>Code Quiz</h1>
+    <section>
+        <div class="time-container">
+            <h2> Time: <span>60s</span>Left</h2>
+        </div>
+    </section>
+    <section class="start-box"> 
+        <p>Welcome to the code quiz. You will have 60 seconds to answer all the questions. Good Luck! </p>
+        <button id="start-btn"> Start </button>
+
+    </section>
+ 
+</header>
+
+<section class="question-section hide">
+    <h3 id="question">This is where the Question will go</h3>
+    <section class="btn-list"></section>
+</section>
+
+<section class="form-section">
+    <form >
+        <input type="text" id="initials-input" placeholder="Enter your Initials">
+        <button id="submit-btn">Submit</button>
+    </form>
+</section>
 <script src="./assets/js/questions.js"></script>
 <script src="./assets/js/script.js"></script>
 </body>
