@@ -7,29 +7,28 @@ header {
     text-align: center;
     background: #494061;
     color: #fff;
-    border-bottom:30px solid #9a8cc0; 
-  }
+    border-bottom: 30px solid #9a8cc0;
+}
 
-  .large-font {
+.large-font {
     font-size: 3.5em;
-    text-align:center;
-  }
+    text-align: center;
+}
 
-  .timer-container {
+.timer-container {
     height: 150px;
     padding: 10px;
     background: #937fa8;
     color: #fff;
     text-align: center;
-  }
+}
 
 
-  .timer {
+.timer {
     height: 200px;
-  }
-  
+}
 
-  button {
+button {
     background: radial-gradient(circle, rgb(198, 187, 219) 0%, rgba(199, 153, 222, 0.954) 100%);
     border-radius: 8px;
     color: black;
@@ -44,26 +43,28 @@ header {
     transition-property: background-color;
     transition-timing-function: linear;
     margin-top: 0.6em;
-  }  
+}
 
-  section {
+section {
     flex: 0 auto;
     padding: 8px;
     margin-top: 50px;
     background-color: white;
     border-radius: 8px;
-  }
+}
 
-  body {
+body,
+p {
     font-family: Arial;
-    color: black; 
+    color: black;
     margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 40vh;
     justify-content: flex-start;
-  }
+}
+
 
 .hide {
-    display:none;
+    display: none;
 }
