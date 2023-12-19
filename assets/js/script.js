@@ -6,16 +6,25 @@ const btnList = document.querySelector(".btn-list");
 const formSection = document.querySelector(".form-section");
 const inputEl = document.getElementById("initials-input");
 const submitBtn = document.getElementById("submit-btn");
+const timerElement = document.querySelector(".timer-count");
 
 let questionindex = 0;
 let score = 0;
+let timer;
+let timerCount;
 
-let count = 0;
-var intId = setInterval(counter, 60000);
-
-function counter() {
-  console.log(--count);
+function startTimer() {
+  timerCount = 60;
+  // Sets timer
+  timer = setInterval(function () {
+    timerCount--;
+    timerElement.textContent = timerCount;
+    if (timerCount >= 0) {
+    }
+  }, 1000);
+  startTimer();
 }
+
 function showQuestions() {
   if (questionindex === questions.length) {
     endQuiz();
