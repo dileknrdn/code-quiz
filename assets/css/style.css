@@ -7,7 +7,7 @@ header {
     text-align: center;
     background: #494061;
     color: #fff;
-    border-bottom:30px #9a8cc0;
+    border-bottom:30px solid #9a8cc0; 
   }
 
   .large-font {

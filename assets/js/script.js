@@ -22,7 +22,6 @@ function startTimer() {
     if (timerCount >= 0) {
     }
   }, 1000);
-  startTimer();
 }
 
 function showQuestions() {
