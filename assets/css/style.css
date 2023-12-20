@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 
-header {
+header,
+h1 {
     padding: 40px;
     text-align: center;
     background: #494061;
@@ -43,6 +44,7 @@ button {
     transition-property: background-color;
     transition-timing-function: linear;
     margin-top: 0.6em;
+    align-items: center;
 }
 
 section {
@@ -62,6 +64,7 @@ p {
     flex-direction: column;
     min-height: 40vh;
     justify-content: flex-start;
+    align-items: center;
 }
 
 
@@ -69,3 +72,20 @@ p {
     display: none;
 }
 
+h1 {
+    text-align: center;
+}
+
+ul,
+li {
+    background-color: #494061;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    flex: 0 auto;
+    padding: 8px;
+    margin-top: 15px;
+    border-radius: 8px;
+    align-items: center;
+
+}

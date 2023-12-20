@@ -1,24 +1,25 @@
-var finalScore = document.querySelector("#finalScore");
-var clear = document.querySelector("#clear");
-var goBack = document.querySelector("#goBack");
+var finalScoreEl = document.querySelector("#finalScore");
+var clearEl = document.querySelector("#clear");
+var goBackEl = document.querySelector("#goBack");
 
-// Event listener to clear scores
-clear.addEventListener("click", function () {
+clearEl.addEventListener("click", function () {
   localStorage.clear();
   location.reload();
 });
 
-// Retreives local stroage
-
 function finalScore() {
-  var score = localStorage.getItem("userscores");
-  {
-    score = JSON.parse(window.localStorage.getItem("userscores"));
-
-    console.log(JSON.parse(window.localStorage.getItem("userscore")));
+  var score = JSON.parse(window.localStorage.getItem("userscores"));
+  console.log(score);
+  for (let index = 0; index < score.length; index++) {
+    const element = score[index];
+    const liEl = document.createElement("li");
+    liEl.textContent = element.initial + "----" + element.score;
+    finalScoreEl.appendChild(liEl);
   }
 }
 
-goBack.addEventListener("click", function () {
+finalScore();
+
+goBackEl.addEventListener("click", function () {
   window.location.replace("./index.html");
 });
