@@ -30,7 +30,7 @@ Three Javascript Pages
 
 ## Deployment Link 
 
-
+https://dileknrdn.github.io/coding-quiz/ 
 
 ## Author 
 
