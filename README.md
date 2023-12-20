@@ -1,6 +1,6 @@
 # Coding-Quiz
 
-Coding quiz is a beginner level quiz with multiple choice questions about coding.
+Coding quiz is a beginner level quiz application with multiple choice questions about coding.
 
 ## Description
 
