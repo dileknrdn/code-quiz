@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <section class="scoreSection"> 
-        <h1> Highest Scores </h1>
-        <ol id="Scores">  </ol>
-        <button id="reset">Start over</button>
-      </section> 
+  </head>
+  <body>
+    <!-- This is a wrapper -->
+    <div id="wrapper">
+      <!-- Div for timer -->
+      <div id="currentTime"></div>
+      <!-- Div for quiz content -->
+      <div id="questionsDiv">
+        <h1>Scores</h1>
+        <ul id="finalScore"></ul>
+        <!-- Buttons -->
+        <button id="goBack">Go Back</button>
+        <button id="clear" value="reset">Clear User Scores</button>
+      </div>
+    </div>
 
-<script src="./assets/js/finalscores.js"></script>
-
-
-
-</body>
+    <script src="./assets/js/finalscores.js"></script>
+  </body>
 </html>

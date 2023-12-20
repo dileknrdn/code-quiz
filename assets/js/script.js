@@ -9,7 +9,6 @@ const submitBtn = document.getElementById("submit-btn");
 const timerElement = document.querySelector(".timer-count");
 const scoreSection = document.querySelector(".scoreSection");
 
-
 let questionindex = 0;
 let score = 0;
 let timer;
@@ -31,15 +30,15 @@ function showQuestions() {
   if (questionindex === questions.length) {
     endQuiz();
   }
-    questionEL.textContent = questions[questionindex].question;
-    btnList.innerHTML = "";
-    for (let i = 0; i < questions[questionindex].answers.length; i++) {
-      const btn = document.createElement("button");
-      btn.setAttribute("class", "btn");
-      btn.textContent = questions[questionindex].answers[i];
+  questionEL.textContent = questions[questionindex].question;
+  btnList.innerHTML = "";
+  for (let i = 0; i < questions[questionindex].answers.length; i++) {
+    const btn = document.createElement("button");
+    btn.setAttribute("class", "btn");
+    btn.textContent = questions[questionindex].answers[i];
 
-      btnList.append(btn);
-    }
+    btnList.append(btn);
+  }
 }
 
 function checkAnswer(answer) {
@@ -57,12 +56,10 @@ function endQuiz() {
   clearInterval(timer);
   questionSection.classList.add("hide");
   formSection.classList.remove("hide");
-
-  console.log(score);
 }
 
 submitBtn.addEventListener("click", () => {
-  
+  event.preventDefault();
   formSection.classList.add("hide");
   var intialInput = inputEl.value.trim();
   if (intialInput) {
